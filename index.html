@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="cycletracker.json" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="icons/392514_coffee_cup_drink_hot_tea_icon.png" />
+    <title>Cycle Tracker</title>
+  </head>
+  <body>
+    <h1>Period Tracker</h1>
+    <form action="">
+      <fieldset>
+        <legend>Enter your period start and end data</legend>
+        <p>
+          <label for="start-date">Start Date</label>
+          <input type="date" id="start-date" />
+        </p>
+        <p>
+          <label for="end-date">End Date</label>
+          <input type="date" id="end-date" />
+        </p>
+      </fieldset>
+      <p>
+        <button type="submit">Add Period</button>
+      </p>
+    </form>
+    <section id="past-periods"></section>
+
+    <script src="app.js" defer></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js").then(
+          (registration) => {
+            console.log("Service Worker Registered", registration);
+          },
+          (err) => {
+            console.error("Service Worker Registration Failed", err);
+          }
+        );
+      }
+    </script>
+    <button id="install" hidden >Install</button>
+  </body>
+</html>

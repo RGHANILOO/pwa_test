@@ -1,0 +1,19 @@
+{
+  "name": "Cycle Tracker",
+  "short_name": "CT",
+  "description": "A simple app to track your menstrual cycle",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f5f5",
+  "theme_color": "#f5f5f5",
+  "icons": [
+    {
+      "src": "icons/392514_coffee_cup_drink_hot_tea_icon.png",
+      "sizes": "148x148"
+    },
+    {
+        "src":"icons/1509446_bottle_halloween_poison_potion_icon.png",
+        "sizes":"148x148"
+    }
+  ]
+}
